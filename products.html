@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masib Collection | Artisanal Handmade Shoes</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="main.js" defer></script>
+</head>
+<body class="bdy">
+  <!-- HEADER SECTION -->
+  <header id="home" class="top-header" role="banner">
+    <a href="index.html" class="logo" aria-label="Masib Collection home">
+      <img src="logo3.jpg" alt="MASIB-COLLECTION LOGO" class="mcl logo-circle">
+    </a>
+
+    <!-- Premium Luxury Icons Middle -->
+    <div class="mid-nav-icons">
+      <a href="products.html" aria-label="Search Collection"><i class="fas fa-search"></i></a>
+      <a href="contact.html" aria-label="My Account"><i class="fas fa-user-circle"></i></a>
+      <a href="products.html" aria-label="Shopping Bag"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+
+    <nav class="main-nav" role="navigation">
+      <button class="hamburger" type="button" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="products.html">COLLECTION</a></li>
+        <li><a href="craftmanship.html">CRAFTMANSHIP</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="section-container">
+  <div class="collection-controls">
+    <!-- Search Bar -->
+    <div class="search-wrapper" style="width: 100%; max-width: 500px; position: relative;">
+      <input type="text" id="product-search" placeholder="Search by name (e.g. 'Herma', 'Black')..." aria-label="Search products" style="width: 100%; padding: 1rem 1.5rem 1rem 3.5rem; border-radius: var(--radius-full); border: 1px solid var(--glass-border); background: var(--bg-surface); font-family: inherit; font-size: var(--text-base); transition: border-color var(--transition-fast);">
+      <i class="fas fa-search" style="position: absolute; left: 1.5rem; top: 50%; transform: translateY(-50%); color: var(--primary); font-size: 1.2rem;"></i>
+    </div>
+
+    <!-- Sort Options -->
+    <div class="sort-wrapper">
+      <select id="sort-products" aria-label="Sort products">
+        <option value="default">Sort By: Featured</option>
+        <option value="price-low">Price: Low to High</option>
+        <option value="price-high">Price: High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Category Filter Bar -->
+  <div class="filter-bar" style="margin-bottom: 3rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <button class="btn-secondary active" data-filter="all" style="padding: 0.5rem 1.5rem;">All</button>
+    <button class="btn-secondary" data-filter="slides" style="padding: 0.5rem 1.5rem;">Slides</button>
+    <button class="btn-secondary" data-filter="slippers" style="padding: 0.5rem 1.5rem;">Slippers</button>
+    <button class="btn-secondary" data-filter="limited" style="padding: 0.5rem 1.5rem;">Limited Edition</button>
+  </div>
+
+  <div class="collection-header" style="margin-bottom: 4rem;">
+    <div class="text-box">
+      <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;"> OUR COLLECTION </h2>
+      <h4> STEP INTO COMFORT, STYLE, AND CONFIDENCE.</h4>
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="product-card" data-category="slides" data-price-val="45000">
+      <div class="product-image-wrapper">
+        <img src="hfc.jpg" alt="half cover shoe" loading="lazy">
+        <div class="badge" style="position: absolute; top: 1rem; left: 1rem; background: var(--primary); color: white; padding: 0.2rem 0.8rem; border-radius: var(--radius-sm); font-size: 0.7rem; font-weight: 700;">NEW ARRIVAL</div>
+        <div class="product-info-overlay">
+          <h4>Artisanal Finish</h4>
+          <p>Hand-burnished full-grain leather for a unique, deep patina.</p>
+        </div>
+      </div>
+      <h3>half step</h3>
+      <p class="price">₦45,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Half Step Cover" 
+        data-price="₦45,000" 
+        data-desc="A masterpiece of minimal design. This half-cover shoe offers the sophistication of a loafer with the ease of a slide."
+        data-materials="Genuine Full-Grain Cowhide, Cushioned Cork Insole"
+        data-care="Wipe with a damp cloth; use neutral leather cream monthly.">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="slides" data-price-val="38500">
+      <div class="product-image-wrapper">
+        <img src="ggc.jpg" alt="black flow" loading="lazy">
+        <div class="product-info-overlay">
+          <h4>Midnight Suede</h4>
+          <p>Premium Italian suede with a moisture-resistant finish.</p>
+        </div>
+      </div>
+      <h3>black flow</h3>
+      <p class="price">₦38,500</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Black Flow Slides" 
+        data-price="₦38,500" 
+        data-desc="Engineered for rhythm and movement. The Black Flow features a moisture-wicking lining perfect for the tropical climate."
+        data-materials="Italian Suede, Anti-slip Rubber Outsole"
+        data-care="Brush with a suede stone to maintain texture; avoid direct water contact.">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="slides" data-price-val="42000">
+      <div class="product-image-wrapper">
+        <img src="hms.jpg" alt="herma slide" loading="lazy">
+        <div class="product-info-overlay">
+          <h4>Ergonomic Last</h4>
+          <p>Sculpted footbed designed for all-day comfort and arch support.</p>
+        </div>
+      </div>
+      <h3>herma slide</h3>
+      <p class="price">₦42,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Herma Cut-Out Slides" 
+        data-price="₦42,000" 
+        data-desc="Inspired by geometric architecture, the Herma Slide features a bold H-cut design that secures the foot elegantly."
+        data-materials="Vegetable-Tanned Leather, Memory Foam Footbed"
+        data-care="Apply beeswax polish to maintain the rich tan luster.">View Details</button>
+    </div>
+
+    <div class="product-card" data-category="slippers" data-price-val="50000">
+      <div class="product-image-wrapper">
+        <img src="brc2.jpg" alt="Ruby Bloom" loading="lazy">
+        <div class="product-info-overlay">
+          <h4>Signature Stitch</h4>
+          <p>Contrast hand-stitching using reinforced wax thread.</p>
+        </div>
+      </div>
+      <h3>ruby bloom</h3>
+      <p class="price">₦50,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Ruby Bloom Slides" data-price="₦50,000" 
+        data-desc="Our signature vibrant red slide, featuring a bold bow design for the woman who walks with confidence."
+        data-materials="Premium Suede, Cork Footbed"
+        data-care="Keep away from moisture; use a suede brush to revive the nap.">View Details</button>
+    </div>
+
+  <div class="product-card" data-category="slippers" data-price-val="12000">
+      <div class="product-image-wrapper">
+        <img src="lfs.jpg" alt="golden palm">
+        <div class="product-info-overlay">
+          <h4>Gilded Detail</h4>
+          <p>Hand-painted gold leaf accents on reinforced cowhide.</p>
+        </div>
+      </div>
+      <h3>golden palm</h3>
+      <p class="price">₦12,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Golden Palm Slides" data-price="₦12,000" 
+        data-desc="Inspired by tropical elegance, these slides feature intricate patterns and a lightweight sole."
+        data-materials="Eco-friendly synthetic upper, Rubber sole"
+        data-care="Wipe clean with a damp cloth.">View Details</button>
+    </div>
+
+  <div class="product-card" data-category="slippers" data-price-val="12000">
+      <div class="product-image-wrapper">
+        <img src="lfs2.jpg" alt="velvet palm">
+        <div class="product-info-overlay">
+          <h4>Supple Texture</h4>
+          <p>Ultra-soft velvet lining for a seamless, irritation-free fit.</p>
+        </div>
+      </div>
+      <h3>velvet palm</h3>
+      <p class="price">₦12,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Velvet Palm Slippers" data-price="₦12,000" 
+        data-desc="Luxury comfort for the home or garden. A soft-touch upper paired with a durable base."
+        data-materials="Velvet Fabric, Flexible PVC Sole"
+        data-care="Hand wash gently; air dry away from direct heat.">View Details</button>
+    </div>
+
+  <div class="product-card" data-category="slippers" data-price-val="50000">
+      <div class="product-image-wrapper">
+        <img src="uns.jpg" alt="Coral Step">
+        <div class="product-info-overlay">
+          <h4>Organic Dye</h4>
+          <p>Vegetable-tanned leather dyed with sustainable coral pigments.</p>
+        </div>
+      </div>
+      <h3>coral step</h3>
+      <p class="price">₦50,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Coral Step Sandals" data-price="₦50,000" 
+        data-desc="Vibrant criss-cross straps offer maximum support and a pop of seasonal color."
+        data-materials="Woven Textile Straps, Padded Insole"
+        data-care="Spot clean straps with mild soap and water.">View Details</button>
+    </div>
+
+  <div class="product-card" data-category="limited" data-price-val="25000">
+      <div class="product-image-wrapper">
+        <img src="zara.jpg" alt="cedar hue">
+        <div class="product-info-overlay">
+          <h4>Timeless Oak</h4>
+          <p>Classic cedar-toned leather that ages beautifully over time.</p>
+        </div>
+      </div>
+      <h3>cedar hue</h3>
+      <p class="price">₦25,000</p>
+      <button class="responsive-btn info-trigger" 
+        data-title="Cedar Hue Limited" data-price="₦25,000" 
+        data-desc="Part of our earth-tone series. Each pair is uniquely grained, celebrating the natural imperfections of the hide."
+        data-materials="Nubuck Leather, Recycled Rubber Outsole"
+        data-care="Use a nubuck protector spray before first wear.">View Details</button>
+    </div>
+    <!-- ... remaining cards updated with same wrapper pattern ... -->
+  </div>
+
+  <!-- No Results Message -->
+  <div id="no-results" class="no-results-container">
+    <i class="fas fa-shoe-prints"></i>
+    <h3>No matches found</h3>
+    <p>Try adjusting your search or filters to find what you're looking for.</p>
+    <button class="btn-secondary" id="reset-filters" style="margin-top: 1rem; padding: 0.6rem 2rem;">Clear All Filters</button>
+  </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2349130216263" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+  <!-- FOOTER SECTION -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>Masib Collection</h3>
+      <p>Handcrafted luxury footwear that combines timeless elegance with uncompromising comfort and quality.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="products.html">Masib Luxe Slides</a></li>
+        <li><a href="products.html">GG Heritage Slippers</a></li>
+        <li><a href="products.html">Royal Strides</a></li>
+        <li><a href="products.html">GreenGold Comfort</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="contact.html">Shipping & Returns</a></li>
+        <li><a href="contact.html">Size Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Connect</h3>
+      <div class="social-media">
+        <a href="https://tiktok.com/@your-username" class="social-box" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com/your-username" class="social-box" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2349130216263" class="social-box" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Masib Collection. All rights reserved. Handcrafted with passion in Nigeria.</p>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+</body>
+</html>

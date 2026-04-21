@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Masib Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="main.js" defer></script>
+</head>
+<body class="bdy">
+  <!-- HEADER SECTION -->
+  <header id="home" class="top-header" role="banner">
+    <a href="index.html" class="logo" aria-label="Masib Collection home">
+      <img src="logo3.jpg" alt="MASIB-COLLECTION LOGO" class="mcl logo-circle">
+    </a>
+
+    <!-- Premium Luxury Icons Middle -->
+    <div class="mid-nav-icons">
+      <a href="products.html" aria-label="Search Collection"><i class="fas fa-search"></i></a>
+      <a href="contact.html" aria-label="My Account"><i class="fas fa-user-circle"></i></a>
+      <a href="products.html" aria-label="Shopping Bag"><i class="fas fa-shopping-bag"></i></a>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <button class="hamburger" type="button" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="products.html">COLLECTION</a></li>
+        <li><a href="craftmanship.html">CRAFTMANSHIP</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="artisanal-texture">
+    <!-- Luxury Design Badges -->
+    <section class="section-container" style="padding-top: var(--space-12); padding-bottom: 0;">
+      <div class="hero-badges">
+        <div style="text-align: center;">
+          <i class="fas fa-concierge-bell" style="color: var(--primary); font-size: 1.5rem; display: block; margin-bottom: 0.5rem;"></i>
+          <span style="font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-muted);">Concierge</span>
+        </div>
+        <div style="text-align: center;">
+          <i class="fas fa-shuttle-van" style="color: var(--primary); font-size: 1.5rem; display: block; margin-bottom: 0.5rem;"></i>
+          <span style="font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-muted);">Global Shipping</span>
+        </div>
+        <div style="text-align: center;">
+          <i class="fas fa-gem" style="color: var(--primary); font-size: 1.5rem; display: block; margin-bottom: 0.5rem;"></i>
+          <span style="font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-muted);">Bespoke</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container">
+    <div class="contact-container">
+      <div class="contact-info fade-in-left">
+        <div class="text-box" style="text-align: left; margin: 0;">
+          <h1 style="font-size: clamp(2.5rem, 8vw, 3.5rem);">Get in Touch</h1>
+          <p style="font-size: 1.1rem; margin-bottom: 2.5rem;">We’d love to hear from you. Whether you’re looking for a bespoke design or need assistance with an order, our team is here to provide a seamless experience.</p>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Direct Line</h4>
+              <p>+234 913 021 6263</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Inquiry</h4>
+              <p>masibcollection@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="https://instagram.com/your-username" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@your-username" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/2349130216263" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form glass-card fade-in-right">
+        <form id="premium-contact-form" action="mailto:info@masibcollection.com" method="post" enctype="text/plain" style="display: grid; gap: 1.5rem;">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" name="name" placeholder="E.g. Masroor Ibrahim" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" name="email" placeholder="E.g. hello@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your bespoke needs..."></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form-fallback">If your email client does not open, please contact us directly at <a href="mailto:masibcollection@gmail.com">masibcollection@gmail.com</a>.</p>
+        </form>
+        <!-- Success Animation Overlay -->
+        <div id="form-success" class="success-overlay" style="display: none;">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Message Sent</h3>
+          <p>Thank you for choosing Masib Collection. We will contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATELIER LOCATIONS -->
+  <section class="section-container" style="margin-top: var(--space-8); background: var(--bg-surface); border-radius: var(--radius-lg);">
+    <h2 class="section-title">Our Ateliers</h2>
+    <div class="grid-container" style="margin-top: 3rem;">
+      <div class="glass-card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary);">Kano Heritage Atelier</h3>
+        <p>Our flagship workshop located in the historic heart of Kano. Join us for private fittings and bespoke design consultations.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-clock"></i> Mon - Sat: 9am - 6pm</p>
+      </div>
+      <div class="glass-card" style="padding: var(--space-6);">
+        <h3 style="color: var(--primary);">Kaduna Design Studio</h3>
+        <p>An exclusive showroom and gallery space dedicated to our northern clientele. Available for viewings and measurements by private booking.</p>
+        <p style="font-size: 0.8rem; color: var(--text-muted);"><i class="far fa-clock"></i> By Appointment Only</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!--FOOTER SECTION -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>Masib Collection</h3>
+      <p>Handcrafted luxury footwear that combines timeless elegance with uncompromising comfort and quality.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Collections</h3>
+      <ul>
+        <li><a href="products.html">Masib Luxe Slides</a></li>
+        <li><a href="products.html">GG Heritage Slippers</a></li>
+        <li><a href="products.html">Royal Strides</a></li>
+        <li><a href="products.html">GreenGold Comfort</a></li>
+        <li><a href="products.html">Luxury Black Leather Thong</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Customer Service</h3>
+      <ul>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#">Shipping Information</a></li>
+        <li><a href="#">Returns &amp; Exchanges</a></li>
+        <li><a href="#">Size Guide</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact</h3>
+      <div class="social-media">
+        <a href="https://tiktok.com/@your-username" class="social-box" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://instagram.com/your-username" class="social-box" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/2349130216263" class="social-box" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+      <h3 style="margin-top: 1.5rem;">Reach Us</h3>
+      <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+2349130216263">+234 913 021 6263</a></p>
+      <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:masibcollection@gmail.com">masibcollection@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="copyright">
+      <p>&copy; 2025 Masib Collection. All rights reserved. Handcrafted with passion in Nigeria.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/2349130216263" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" aria-label="Scroll to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+</body>
+</html>
