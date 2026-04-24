@@ -1,0 +1,21 @@
+{
+  "name": "Masib Collection",
+  "short_name": "Masib",
+  "description": "Artisanal Handmade Shoes from Kano, Nigeria.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fffbe6",
+  "theme_color": "#c29664",
+  "icons": [
+    {
+      "src": "logo3.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "logo3.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

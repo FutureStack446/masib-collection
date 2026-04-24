@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masibcollection.netlify.app/sitemap.xml
